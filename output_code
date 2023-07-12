@@ -1,0 +1,12 @@
+input_your_mail = [""]
+input_data_features = feature_extraction.transform(input_your_mail)
+
+prediction = model.predict(input_data_features)
+
+print(prediction)
+
+if (prediction==0):
+  print("spam mail")
+
+else:
+  print("ham mail")
